@@ -1,0 +1,11 @@
+Restart internet-
+CODE: systemctl restart network-manager.service
+
+Download all .pdf files from a webpage:
+CODE: wget -r -l1 -A.pdf http://www.example.com/page-with-pdfs.htm
+
+Switchoff touchscreen:
+CODE: xinput set-prop 10 "Device Enabled" 0
+This works if your touchscreen is device number 10. To check your touch-screen input device number:
+CODE: xinput --list
+This can be used for any input device from the list.
